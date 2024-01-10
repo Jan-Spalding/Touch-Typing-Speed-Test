@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Touch Typing Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>
+  </head>
+  <body onload="randomWords()">
+    <div id="settings">
+      <div id="changeButtons">
+        <button onclick="setHundred()"> 200 Words </button>
+        <button onclick="setThousand()"> 1000 Words </button>
+        <button onclick="scramble()"> Scramble </button>
+      </div>
+      <div id="buttons">
+        <button onclick="wording()"> Words </button>
+        <button onclick="timing()"> Timer </button>
+      </div>
+    </div>
+    <div id="content">
+      <div id="display"></div>
+      <div id="overlay"></div>
+      <div id="userInteract">
+        <div id="input" contenteditable="true" onkeydown="inputWords(event)"></div>
+        <div id="timer">60s</div>
+        <div id="restart" onclick="restart()" tabindex="0" onkeydown="restart()"><p onclick="restart()">Restart</p></div>
+      </div>
+      <div id="output">WPM: <br>Characters: <br>Accuracy: <br></div>
+    </div>
+    <div id="wordButtons">
+      <p id="sliderOutput">Words: 50</p>
+      <input id="words" type="range" min="10" max="150">
+    </div>
+    <div id="timeButtons">
+      <p id="sliderOutputt">Time: 60s</p>
+      <input id="settime" type="range" min="10" max="60">
+    </div>
+    <div id="counter">
+      <p id="countValue"></p>
+    </div>
+    <div id="backgroundChanger">
+      <label for="background">Change the background:</lable>
+      <input type="color" id="background" value="#FFFFFF">
+    </div>
+    <div id="hide">
+      <div class="title"><p>Enter Username:<br></p></div>
+      <div class="title">
+        <input id="input1" type="textbox"></input>
+        <button onclick="userInput()">Submit</button>
+      </div>
+      <div id="error"></div>
+      <div style="text-align:center;"><h2><br><br>HIGH SCORES</h2></div>
+      <div id="highscoreCenter">
+        <div id="highscores">
+          <div id="output0"></div>
+          <div id="output1"></div>
+          <div id="output2"></div>
+          <div id="output3"></div>
+          <div id="output4"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

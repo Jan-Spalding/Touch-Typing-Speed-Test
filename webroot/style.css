@@ -1,0 +1,151 @@
+#display {
+  border:2px solid black;
+  margin:20px;
+  padding:10px;
+  height:100px;
+  overflow-y:scroll;
+  background-color:white;
+  font-size:45px;
+}
+
+#overlay {
+  opacity:0;
+  margin:0;
+  background-color:black;
+  padding:10px;
+  height:110px;
+  width:95%;
+  position:absolute;
+  top:45px;
+}
+
+#display::-webkit-scrollbar {
+  display:none;
+}
+
+#input {
+  height:50px;
+  font-size:30px;
+  padding-top:12px;
+  padding-left:10px;
+  border:2px solid black;
+  width:80%;
+  margin-left:20px;
+  background-color:white;
+  overflow:hidden;
+}
+
+#userInteract {
+  display:flex;
+}
+
+#timer {
+  background-color:blue;
+  color:white;
+  margin:5px;
+  font-size:30px;
+  padding:5px;
+  width:4%;
+}
+
+#restart {
+  margin:5px;
+  height:50px;
+  width:8%;
+  background-color:blue;
+  color:white;
+  font-size:16px;
+  text-align:center;
+  cursor: pointer;
+}
+/* 
+#content {
+  display:flex;
+  justify-content:center;
+  aling-items:center;
+} */
+
+
+#output {
+  margin:20px;
+  background-color:blue;
+  color:white;
+  font-size:20px;
+}
+
+#backgroundChanger {
+  margin:20px;
+  font-size:20px;
+}
+
+/* #input1 {
+  height:10%;
+} */
+
+#highscores {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  width:100px;
+}
+
+.title {
+  display: none;
+  justify-content:center;
+  align-items:center;
+}
+
+#error {
+  text-align:center;
+}
+
+#highscoreCenter {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+p {
+  display:inline;
+}
+
+#words {
+  margin:10px;
+}
+
+#settings {
+  /* display:flex; */
+  position:relative;
+  margin-top:0;
+  margin-bottom:0;
+  margin-right:20px;
+  margin-left:20px;
+}
+
+#buttons {
+  position: absolute;
+  right: 0;
+  top:0;
+  
+}
+
+#wordButtons {
+  display:none;
+  position:absolute;
+  right:20px;
+  top:20px;
+}
+
+#counter {
+  position: absolute;
+  top:30px;
+  left:30px;
+}
+
+#timeButtons {
+  display: block;
+  position: absolute;
+  right:30px;
+  top:30px;
+}
