@@ -8,7 +8,7 @@ This was considered one of my first projects. In college I was starting to reall
 
 I picked out one of the websites I visited frequently and decided to recreate it from scratch. The page has now changed from when I first made the program so here is a picture to show what I was trying to go for.
 
-<img src="https://raw.githubusercontent.com/Jan-Spalding/Touch-Typing-Speed-Test/refs/heads/main/Old%20website.png">
+<img height="500px" width="300px" src="https://raw.githubusercontent.com/Jan-Spalding/Touch-Typing-Speed-Test/refs/heads/main/Old%20website.png">
 
 Using a list of 200 of the most common english words I generate them at random for the display. Preventing the user from scrolling or selecting the text and ensuring the words get highlighted and scrolled into view. 
 
